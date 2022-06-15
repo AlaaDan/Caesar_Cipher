@@ -4,7 +4,6 @@ print(logo)
 mode = True
 
 
-
 def ceasar(direction, text, shift):
   if direction  == "encode":
     cipher_code = ""
@@ -50,9 +49,9 @@ while on:
   
   ceasar(direction, text, shift)
   repeat = input("If you want to go again, Type: 'yes'. Otherwise Type: 'no'.").lower()
-  if repeat != "no" and repeat != "yes":
+  if repeat != "no" or repeat != "yes":
     on = False
-    print("Thanks for using the Caesar Cipher.")
+    print("Wrong input. The program is now offline")
   elif repeat == "no":
     on = False
     print("Thanks for using the Caesar Cipher.")
